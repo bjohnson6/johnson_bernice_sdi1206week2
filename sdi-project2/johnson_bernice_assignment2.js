@@ -21,9 +21,9 @@ var  directionsToHotel = true,
 
 var driveToHotel = function (hotelName) {
         if (directionsToHotel === true) {
-            console.log ("To get to the "+ hotelName +" from here the "+ followGps +" First we need to head to the "+ freeway + "." +" This is going to be a long drive.");
+            console.log("To get to the " + hotelName + " from here the " + followGps + " First we need to head to the " + freeway + "." + " This is going to be a long drive.");
         } else {
-    	    console.log ('We need to figure out another way to get there.');
+    	    console.log('We need to figure out another way to get there.');
    
         };  
 
@@ -34,34 +34,28 @@ var driveToHotel = function (hotelName) {
 //#2 Boolean Function...Deciding if we should wait to eat once we get there or before?
 
 var waitToEat = function (notHungry, betterFood) {
-	    var eatNow =(notHungry && betterFood);
+	    var eatNow = (notHungry && betterFood);
 	    if (eatNow === true) {
-		    console.log ("We are getting alittle hungry now but I think we should wait to eat until we get there because the food will be better in town.");
+		    console.log("We are getting alittle hungry now but I think we should wait to eat until we get there because the food will be better in town.");
 	    } else {
-    	    console.log ("Let\'s find a place to eat on the freeway.");
+    	    console.log("Let\'s find a place to eat on the freeway.");
         
         };
-        eat = eatNow;
+        var eat = eatNow;
         return eat;  //RETURN BOOLEAN FUNCTION =true
     }; //END OF BOOLEAN FUNCTION
     
 
 
-
-
-
-
 //#3  Number Function 
 
-var undecided = function () {} //number argument
-
-
-
+var  checkInHotel = function (number) {} //number argument
+        
 
 
 //#4 String Function
 
- var undecided = function () {} // 2 string arguments
+ var relaxInRoom = function (relax1, plans) {} // 2 string arguments // shower & talk
 
 
 
@@ -73,6 +67,10 @@ var undecided = function () {} //number argument
  //#5  
 
  var undecided = function () {} // number and array arguments
+         var bistroBurger = 12 * 2;
+         var soda = 1 * 2;
+         var waitForFood = 15;
+
 
 
 
