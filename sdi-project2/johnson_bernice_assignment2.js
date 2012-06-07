@@ -19,10 +19,10 @@ var  directionsToHotel = true,
 
 //#1 Procedure ..using the gps to get to our hotel.
 
-var driveToHotel= function (hotelName) {
+var driveToHotel = function (hotelName) {
         if (directionsToHotel === true) {
             console.log ("To get to the "+ hotelName +" from here the "+ followGps +" First we need to head to the "+ freeway + "." +" This is going to be a long drive.");
-        }else{
+        } else {
     	    console.log ('We need to figure out another way to get there.');
    
         };  
@@ -37,7 +37,7 @@ var waitToEat = function (notHungry, betterFood) {
 	    var eatNow =(notHungry && betterFood);
 	    if (eatNow === true) {
 		    console.log ("We are getting alittle hungry now but I think we should wait to eat until we get there because the food will be better in town.");
-	    }else{
+	    } else {
     	    console.log ("Let\'s find a place to eat on the freeway.");
         
         };
