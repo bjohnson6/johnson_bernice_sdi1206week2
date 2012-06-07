@@ -55,7 +55,16 @@ var  checkInHotel = function (number) {} //number argument
 
 //#4 String Function
 
- var relaxInRoom = function (relax1, plans) {} // 2 string arguments // shower & talk
+ var relaxInRoom = function (relax1, plans) { // 2 string arguments // shower & talk
+         var town = "connecticut ave, dupont circle";
+         var bistro = "bistro bistro";
+         var hotelRoom = ("We are finally back in our hotel room now. It feels so good to sit down on this nice comfy bed & relax for a minute. Next I am going to  " + relax1 + ". " + "We are both ready to go out now and still very hungry. We need to " + plans + " where we want to eat.");
+         var walkDownTown = ("Let's walk down " + town + " to see what restaurants we can find. This place called " + bistro + " looks good. We go inside and sit down.");
+         console.log("We are finally back in our hotel room now. It feels so good to sit down on this nice comfy bed & relax for a minute. Next I am going to" + relax1 + ". " + " We are both ready to go out now and still very hungry. We need to " + plans + " where we want to eat.");
+         console.log("Let's walk down " + town + " to see what restaurants we can find. This little cozy place called " + bistro + " looks good. We go inside and sit down.");
+         return hotelRoom + walkDownTown;
+     };
+    
 
 
 
@@ -63,8 +72,7 @@ var  checkInHotel = function (number) {} //number argument
 
 
 
-
- //#5  
+ //#5 Array Function
 
  var undecided = function () {} // number and array arguments
          var bistroBurger = 12 * 2;
@@ -88,3 +96,8 @@ var  checkInHotel = function (number) {} //number argument
  driveToHotel("Washington Hilton");
  //Boolean Function//
  waitToEat(true, true);
+ //Number Function//
+ checkInHotel();
+ //String Function//
+ relaxInRoom("get a nice warm shower", "decide");
+ //Array Function//
