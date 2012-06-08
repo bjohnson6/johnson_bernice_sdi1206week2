@@ -16,14 +16,14 @@ var  directionsToHotel = true,
      followGps = "the gps says it will take 3hrs.",
      hotelName = "Washington Hilton",
      timeStillWaitingInLine = 0,
-     foodOrdered =["soda", "bread with dip", "bistro burgers", "fries"],
+     foodOrdered =["sodas", "bread with dip", "bistro burgers", "fries"],
      orderOfFood = [1, 2, 3, 4];
 
 //#1 Procedure ..using the gps to get to our hotel.
 
 var driveToHotel = function (hotelName) {
         if (directionsToHotel === true) {
-            console.log("To get to the " + hotelName + " from here the " + followGps + " First we need to head to the " + freeway + "." + " This is going to be a long drive.");
+            console.log("To get to the " + hotelName + " from here " + followGps + " First we need to head to the " + freeway + "." + " This is going to be a long drive.");
         } else {
     	    console.log('We need to figure out another way to get there.');
    
@@ -52,14 +52,14 @@ var waitToEat = function (notHungry, betterFood) {
 //#3  Number Function 
 
 var  checkInHotelTime = function (hotelNumber) { //number argument
-	     console.log("We just got to the check in desk at the hotel. Looks like there is a pretty big line.");
+	     console.log("We just got to the check in desk at the hotel. Looks like there is a pretty long line.");
          var waitInLine = 15; 
          while (waitInLine > timeStillWaitingInLine) {
          	   console.log("The wait will be " + waitInLine + " minutes until our turn.");
                waitInLine -=5
          	   
          };
-         console.log("Finally we checked in and got our key. Our room is " + hotelNumber + " on the second floor.");
+         console.log("Finally we are checked in and got our room keys. Our room number is " + hotelNumber + " on the second floor.");
          return hotelNumber;
 
      };//END OF NUMBER FUNCTION
@@ -68,11 +68,11 @@ var  checkInHotelTime = function (hotelNumber) { //number argument
 //#4 String Function
 
  var relaxInRoom = function (relax1, plans) { // 2 string arguments // shower & talk
-         var town = "connecticut ave, dupont circle";
+         var town = "connecticut ave and dupont circle";
          var bistro = "bistro bistro";
-         var hotelRoom = ("We are finally back in our hotel room now. It feels so good to sit down on this nice comfy bed & relax for a minute. Next I am going to  " + relax1 + ". " + "We are both ready to go out now and still very hungry. We need to " + plans + " where we want to eat.");
+         var hotelRoom = ("We are finally back in our hotel room. It feels so good to sit down on this nice comfy bed and relax for a minute. Next I am going to  " + relax1 + ". " + "We are both hungry and ready to go out. We need to " + plans + " where we want to eat.");
          var walkDownTown = ("Let's walk down " + town + " to see what restaurants we can find. This place called " + bistro + " looks good. We go inside and sit down.");
-         console.log("We are finally back in our hotel room now. It feels so good to sit down on this nice comfy bed & relax for a minute. Next I am going to" + relax1 + ". " + " We are both ready to go out now and still very hungry. We need to " + plans + " where we want to eat.");
+         console.log("We are finally back in our hotel room. It feels so good to sit down on this nice comfy bed and relax for a minute. Next I am going to " + relax1 + ". " + " We are both hungry and ready to go out. We need to " + plans + " where we want to eat.");
          console.log("Let's walk down " + town + " to see what restaurants we can find. This little cozy place called " + bistro + " looks good. We go inside and sit down.");
          return hotelRoom + walkDownTown;
      };//END OF STRING FUNCTION
@@ -82,10 +82,10 @@ var  checkInHotelTime = function (hotelNumber) { //number argument
 
  var orderingOurFood = function (food, number) {
  	     console.log("The waiter comes over to our table to greet us and give us our menus. Then we order our food. ");
- 	     var foodTaste = ["refreshing", "so soft", "so juicy and yummy", "crunchy"];
+ 	     var foodTaste = ["refreshing", "warm and soft", "so juicy and yummy", "crunchy"];
  	     var orderOfNumbers = ["st", "nd", "rd", "th"];
          for (var i = 0; i < foodOrdered.length;  i++) {
-         	  console.log("The waiter brought us out " + foodOrdered[i] + ", " + orderOfFood[i] + orderOfNumbers[i] + " that were " + foodTaste[i] + ".");
+         	  console.log("The waiter brought us our " + foodOrdered[i] + (" ") + orderOfFood[i] + orderOfNumbers[i] + " that were " + foodTaste[i] + ".");
          };	  
          console.log("All the food was great. We paid and then the waiter said good evening ladies and we went shopping down the block.");
          return foodTaste;
