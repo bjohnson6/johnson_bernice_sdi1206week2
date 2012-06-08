@@ -15,8 +15,9 @@ var  directionsToHotel = true,
      betterFood = true,
      followGps = "the gps says it will take 3hrs.",
      hotelName = "Washington Hilton",
-     timeStillWaitingInLine = 0;
-     //ADD ARRAY
+     timeStillWaitingInLine = 0,
+     foodOrdered =["soda", "bread with dip", "bistro burgers", "fries"],
+     orderOfFood = [1, 2, 3, 4];
 
 //#1 Procedure ..using the gps to get to our hotel.
 
@@ -51,17 +52,18 @@ var waitToEat = function (notHungry, betterFood) {
 //#3  Number Function 
 
 var  checkInHotelTime = function (hotelNumber) { //number argument
+	     console.log("We just got to the check in desk at the hotel. Looks like there is a pretty big line.");
          var waitInLine = 15; 
-         console.log("We just got to the check in desk at the hotel. Looks like there is a pretty big line.");
          while (waitInLine > timeStillWaitingInLine) {
          	   console.log("The wait will be " + waitInLine + " minutes until our turn.");
                waitInLine -=5
-         	   //waitInLine -=5
+         	   
          };
          console.log("Finally we checked in and got our key. Our room is " + hotelNumber + " on the second floor.");
          return hotelNumber;
 
      };//END OF NUMBER FUNCTION
+         
 
 //#4 String Function
 
@@ -76,33 +78,24 @@ var  checkInHotelTime = function (hotelNumber) { //number argument
      };//END OF STRING FUNCTION
    
 
+//#5 Array Function
+
+ var orderingOurFood = function (food, number) {
+ 	     console.log("The waiter comes over to our table to greet us and give us our menus. Then we order our food. ");
+ 	     var foodTaste = ["refreshing", "so soft", "so juicy and yummy", "crunchy"];
+ 	     var orderOfNumbers = ["st", "nd", "rd", "th"];
+         for (var i = 0; i < foodOrdered.length;  i++) {
+         	  console.log("The waiter brought us out " + foodOrdered[i] + ", " + orderOfFood[i] + orderOfNumbers[i] + " that were " + foodTaste[i] + ".");
+         };	  
+         console.log("All the food was great. We paid and then the waiter said good evening ladies and we went shopping down the block.");
+         return foodTaste;
 
 
-
-
-
-
- //#5 Array Function
-
- var undecided = function () {} // number and array arguments
+     };//END OF ARRAY FUNCTION
          
-         var bistroBurger = 12 * 2;
-         var soda = 1 * 2;
-         var waitForFood = 15;
+        
 
-
-
-
-
-
-
-
-
-
-
-
-
- //CALL FUNCTIONS 
+//CALL FUNCTIONS 
  //Procedure Function//
  driveToHotel("Washington Hilton");
  //Boolean Function//
@@ -111,4 +104,23 @@ var  checkInHotelTime = function (hotelNumber) { //number argument
  checkInHotelTime(2166);
  //String Function//
  relaxInRoom("get a nice warm shower", "decide");
- //Array Function//
+ //Array Function/
+ orderingOurFood(foodOrdered, orderOfFood);
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
