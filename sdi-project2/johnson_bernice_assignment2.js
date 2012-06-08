@@ -70,10 +70,10 @@ var  checkInHotelTime = function (hotelNumber) { //number argument
  var relaxInRoom = function (relax1, plans) { // 2 string arguments // shower & talk
          var town = "connecticut ave and dupont circle";
          var bistro = "bistro bistro";
-         var hotelRoom = ("We are finally back in our hotel room. It feels so good to sit down on this nice comfy bed and relax for a minute. Next I am going to  " + relax1 + ". " + "We are both hungry and ready to go out. We need to " + plans + " where we want to eat.");
-         var walkDownTown = ("Let's walk down " + town + " to see what restaurants we can find. This place called " + bistro + " looks good. We go inside and sit down.");
-         console.log("We are finally back in our hotel room. It feels so good to sit down on this nice comfy bed and relax for a minute. Next I am going to " + relax1 + ". " + " We are both hungry and ready to go out. We need to " + plans + " where we want to eat.");
-         console.log("Let's walk down " + town + " to see what restaurants we can find. This little cozy place called " + bistro + " looks good. We go inside and sit down.");
+         var hotelRoom = console.log("We are finally back in our hotel room. It feels so good to sit down on this nice comfy bed and relax for a minute. Next I am going to  " + relax1 + ". " + "We are both hungry and ready to go out. We need to " + plans + " where we want to eat.");
+         var walkDownTown =  console.log("Let's walk down " + town + " to see what restaurants we can find. This place called " + bistro + " looks good. We go inside and sit down.");
+         //console.log("We are finally back in our hotel room. It feels so good to sit down on this nice comfy bed and relax for a minute. Next I am going to " + relax1 + ". " + " We are both hungry and ready to go out. We need to " + plans + " where we want to eat.");
+         // console.log("Let's walk down " + town + " to see what restaurants we can find. This little cozy place called " + bistro + " looks good. We go inside and sit down.");
          return hotelRoom + walkDownTown;
      };//END OF STRING FUNCTION
    
@@ -89,9 +89,9 @@ var  checkInHotelTime = function (hotelNumber) { //number argument
          };	  
          console.log("All the food was great. We paid and then the waiter said good evening ladies and we went shopping down the block.");
          return foodTaste;
-
-
+    
      };//END OF ARRAY FUNCTION
+
          
         
 
