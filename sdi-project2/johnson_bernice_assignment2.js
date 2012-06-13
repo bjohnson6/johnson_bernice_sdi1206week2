@@ -19,7 +19,7 @@ var  directionsToHotel = true,
      foodOrdered =["sodas", "bread with dip", "bistro burgers", "fries"],
      orderOfFood = [1, 2, 3, 4];
 
-//#1 Procedure ..using the gps to get to our hotel.
+//#1 Procedure ..Driving using the gps to get to our hotel.
 
 var driveToHotel = function (hotelName) {
         if (directionsToHotel === true) {
@@ -49,7 +49,7 @@ var waitToEat = function (notHungry, betterFood) {
     
 
 
-//#3  Number Function 
+//#3  Number Function //Waiting on line at the hotel to check in
 
 var  checkInHotelTime = function (hotelNumber) { //number argument
 	     console.log("We just got to the check in desk at the hotel. Looks like there is a pretty long line.");
@@ -65,7 +65,7 @@ var  checkInHotelTime = function (hotelNumber) { //number argument
      };//END OF NUMBER FUNCTION
          
 
-//#4 String Function
+//#4 String Function //Ralxing in our room deciding where to go eat?
 
  var relaxInRoom = function (relax1, plans) { // 2 string arguments // shower & talk
          var town = "connecticut ave and dupont circle";
@@ -78,7 +78,7 @@ var  checkInHotelTime = function (hotelNumber) { //number argument
      };//END OF STRING FUNCTION
    
 
-//#5 Array Function
+//#5 Array Function//We are at the restaurant ordering our food.
 
  var orderingOurFood = function (food, number) {
  	     console.log("The waiter comes over to our table to greet us and give us our menus. Then we order our food. ");
@@ -106,7 +106,7 @@ var  checkInHotelTime = function (hotelNumber) { //number argument
  relaxInRoom("get a nice warm shower", "decide");
  //Array Function/
  orderingOurFood(foodOrdered, orderOfFood);
-
+//END////
 
 
 
